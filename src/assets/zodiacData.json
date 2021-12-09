@@ -1,0 +1,110 @@
+{
+    "dragon": {
+        "health": "Eat a lot, and be healthy",
+        "wealth": "Be gentle and be generous",
+        "romance": "It is your lucky year to find romance.",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Commonwealth", "Geylang"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "dog": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "goat": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "horse": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "monkey": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "mouse": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "ox": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "pig": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "rabbit": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "rooster": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "snake": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    },
+    "tiger": {
+        "health": "monkey health",
+        "wealth": "wealth",
+        "romance": "romance",
+        "lucky_numbers": [8, 9],
+        "lucky_directions": ["north", "northeast"],
+        "lucky_locations": ["Orchard", "Bishan"],
+        "lucky_colors": ["red", "blue"]
+    }
+}
