@@ -32,4 +32,14 @@ const getZodiacImages = () => {
 
 const ZODIAC_IMAGES = getZodiacImages();
 
-export { determineZodiac, ZODIAC_IMAGES }
+const getYearArray = (year) => {
+    return [
+        year - 24,
+        year - 12,
+        year,
+        year + 12,
+        year + 24
+    ]
+}
+
+export { determineZodiac, getYearArray, ZODIAC_IMAGES }

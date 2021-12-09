@@ -1,6 +1,5 @@
 const ListingCard = (props) => {
     const listing = props.listing;
-    console.log(listing);
 
     return (
         <div className="listing-card">

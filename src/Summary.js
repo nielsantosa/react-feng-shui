@@ -1,5 +1,5 @@
 import { useLocation } from "react-router";
-import { determineZodiac } from "./lib/ZodiacLogic";
+import { determineZodiac, getYearArray } from "./lib/ZodiacLogic";
 import { capitalize } from "./lib/utils";
 import useFetch from './useFetch';
 import zodiacData from './assets/zodiacData.json'
@@ -18,9 +18,12 @@ import {
     tigerImage,
 } from './assets/index'
 import ListingCard from "./ListingCard";
-import { useState } from "react";
+import LoadingPage from "./LoadingPage";
+import { useState, useEffect } from "react";
 
 const Summary = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     const useQuery = () => {
         const params = new URLSearchParams(useLocation().search);
 
@@ -59,14 +62,19 @@ const Summary = () => {
         return apiUrl + new URLSearchParams(queryParams).toString()
     }
 
-    const getYearArray = (year) => {
-        return [
-            year - 24,
-            year - 12,
-            year,
-            year + 12,
-            year + 24
-        ]
+    /* handle transition */
+    useEffect(() => {
+        runTransition();
+    },[isLoading])
+
+    const runTransition = () => {
+        setTimeout(() => {
+            const loader = document.querySelector('.loading-page');
+            const summaryPage = document.querySelector('.summary-page');
+            summaryPage.classList.remove('loader--hide');
+            loader.classList.add('loader--hide');
+        }, 2000)
+        setIsLoading(false);
     }
 
     /* handling zodiacs */
@@ -96,67 +104,70 @@ const Summary = () => {
     /* handling listings */
     const searchApiUrl = constructApiUrl(oneZodiacData.lucky_locations);
     const { data, isPending, error } = useFetch(searchApiUrl);
-    const listings = data && data.data.sections[0].listings
+    const listings = data && data.data.sections[0].listings;
 
     return (
         <div className="summary">
-            <div className="summary-head">
-                <h1>Your Chinese Zodiac is</h1>
-                <img src={zodiacImage} alt={`${zodiac}_image`} />
-                <h1>{capitalize(zodiac)}</h1>
-                <p>{yearArray.slice(0, 2).join(', ')}, <b>{birthDateObject.getFullYear()}</b>, {yearArray.slice(3, 5).join(', ')}</p>
-            </div>
-            <div className="summary-details">
-                <div className="summary-details-1-col">
-                    <h4>Health</h4>
-                    <p>{oneZodiacData.health}</p>
+            <LoadingPage />
+            <div className="summary-page loader--hide">
+                <div className="summary-head">
+                    <h1>Your Chinese Zodiac is</h1>
+                    <img src={zodiacImage} alt={`${zodiac}_image`} />
+                    <h1>{capitalize(zodiac)}</h1>
+                    <p>{yearArray.slice(0, 2).join(', ')}, <b>{birthDateObject.getFullYear()}</b>, {yearArray.slice(3, 5).join(', ')}</p>
                 </div>
-                <div className="summary-details-1-col">
-                    <h4>Weath</h4>
-                    <p>{oneZodiacData.wealth}</p>
-                </div>
-                <div className="summary-details-1-col">
-                    <h4>Romance</h4>
-                    <p>{oneZodiacData.romance}</p>
-                </div>
-                <div className="summary-details-2-cols">
-                    <div>
-                        <h4>Lucky Numbers</h4>
-                        <p>{oneZodiacData.lucky_numbers.join(', ')}</p>
+                <div className="summary-details">
+                    <div className="summary-details-1-col">
+                        <h4>Health</h4>
+                        <p>{oneZodiacData.health}</p>
                     </div>
-                    <div>
-                        <h4>Lucky Colors</h4>
-                        <p>{oneZodiacData.lucky_colors.join(', ')}</p>
+                    <div className="summary-details-1-col">
+                        <h4>Weath</h4>
+                        <p>{oneZodiacData.wealth}</p>
                     </div>
-                </div>
-                <div className="summary-details-2-cols">
-                    <div>
-                        <h4>Lucky Directions</h4>
-                        <p>{oneZodiacData.lucky_directions.join(', ')}</p>
+                    <div className="summary-details-1-col">
+                        <h4>Romance</h4>
+                        <p>{oneZodiacData.romance}</p>
                     </div>
-                    <div>
-                        <h4>Lucky Locations</h4>
-                        <p>{oneZodiacData.lucky_locations.join(', ')}</p>
+                    <div className="summary-details-2-cols">
+                        <div>
+                            <h4>Lucky Numbers</h4>
+                            <p>{oneZodiacData.lucky_numbers.join(', ')}</p>
+                        </div>
+                        <div>
+                            <h4>Lucky Colors</h4>
+                            <p>{oneZodiacData.lucky_colors.join(', ')}</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div className="summary-listings">
-                <h2>Listings for Sale curated for people with {capitalize(zodiac)} Zodiac</h2>
-                <div className="summary-buttons">
-                    <div>
-                        <b>Based on your lucky locations</b>
-                    </div>
-                    <div>
-                        <a href={constructSRPUrl(oneZodiacData.lucky_locations)} target="_blank">
-                            View all
-                        </a>
+                    <div className="summary-details-2-cols">
+                        <div>
+                            <h4>Lucky Directions</h4>
+                            <p>{oneZodiacData.lucky_directions.join(', ')}</p>
+                        </div>
+                        <div>
+                            <h4>Lucky Locations</h4>
+                            <p>{oneZodiacData.lucky_locations.join(', ')}</p>
+                        </div>
                     </div>
                 </div>
-                { isPending && <div>Loading...</div> }
-                { error && <div>{error.message}</div> }
-                { listings && listings.map((listing) => (
-                    <ListingCard listing={listing} key={listing.id}/>
-                ))}
+                <div className="summary-listings">
+                    <h2>Listings for Sale curated for people with {capitalize(zodiac)} Zodiac</h2>
+                    <div className="summary-buttons">
+                        <div>
+                            <b>Based on your lucky locations</b>
+                        </div>
+                        <div>
+                            <a href={constructSRPUrl(oneZodiacData.lucky_locations)} target="_blank" rel="noreferrer">
+                                View all
+                            </a>
+                        </div>
+                    </div>
+                    { isPending && <div>Loading...</div> }
+                    { error && <div>{error.message}</div> }
+                    { listings && listings.map((listing) => (
+                        <ListingCard listing={listing} key={listing.id}/>
+                    ))}
+                </div>
             </div>
         </div>
     )

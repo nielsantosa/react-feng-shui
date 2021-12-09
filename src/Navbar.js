@@ -18,7 +18,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className="navbar-help">
-        <p>Help</p>
+        
       </div>
     </nav>
   )
