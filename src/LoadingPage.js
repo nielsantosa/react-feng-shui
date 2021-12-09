@@ -4,7 +4,7 @@ import {
     goatImage,
     horseImage,
     monkeyImage,
-    mouseImage,
+    ratImage,
     oxImage,
     pigImage,
     rabbitImage,
@@ -30,7 +30,7 @@ const LoadingPage = () => {
                     <img src={monkeyImage} alt=""/>
                 </div>
                 <div className="loading-page-child-4">
-                    <img src={mouseImage} alt=""/>
+                    <img src={ratImage} alt=""/>
                 </div>
                 <div className="loading-page-child-3">
                     <img src={pigImage} alt=""/>

@@ -1,110 +1,122 @@
 {
     "dragon": {
-        "health": "Eat a lot, and be healthy",
-        "wealth": "Be gentle and be generous",
-        "romance": "It is your lucky year to find romance.",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Commonwealth", "Geylang"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Health will often be haunted by old relapsing illnesses. The tragedy of the death of one of the family members may disturb family happiness …",
+        "wealth": "Even so, a career requires more attention and thoroughness. Initially there may still be difficulties (from the years before), but in the end you will have a great year! If you want to change jobs, or start a new business project, this is the right time, because the year is quite promising. Finance is also predicted to be stable (in a steady pace). Expenditure will not exceed income, as long as you can manage it well, because if you do not, you will be dealing with a financial disaster!",
+        "romance": "For those who are still single, look for a pair with a rat, a tiger, or a chicken. They will be very supportive and help cover up your weaknesses. Commit to relationships, who knows you will get married this year 🙂",
+        "lucky_numbers": [2, 7],
+        "lucky_directions": ["east", "northeast"],
+        "lucky_locations": ["Sembawang", "Sengkang"],
+        "lucky_colors": ["white", "blue"],
+        "formatted_name": "Dragon (辰)"
     },
     "dog": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
+        "health": "Not much will be happening to your life.",
+        "wealth": "They will struggle in a work environment. The financial prospects are also not very encouraging. You have to cut expenses and make tightening in order to survive.",
+        "romance": "Your household life will be flat, and tends to be boring. So, avoid conflicts with your partner.",
         "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "lucky_directions": ["south", "northeast"],
+        "lucky_locations": ["Tengah", "Toa Payoh"],
+        "lucky_colors": ["brown", "purple"],
+        "formatted_name": "Dog (戌)"
     },
     "goat": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Do not be stubborn! Avoid arguments with a spouse, or it’s just going to make the situation worse. There are no health problems that are significant. Taking a walk outside the country can refresh your mind, but pay attention to the limitation due to the pandemic.",
+        "wealth": "Your finance position would be very good in half of 2022. The office workers can get extra money, but don’t forget to pay attention to dirty “office political” things. Having a good relationship with all the people will help in your career. Working hard will bring recognition and satisfaction to your financial situation.",
+        "romance": "The single can take the opportunity to establish a new relationship, and may end in a wedding. Meanwhile, for those who are married, it seems that they will encounter some problems in their family, such as quarrels due to the presence of a 3rd person.",
+        "lucky_numbers": [3, 5],
+        "lucky_directions": ["east", "southeast"],
+        "lucky_locations": ["Western Water Catchment", "Yishun"],
+        "lucky_colors": ["green", "yellow"],
+        "formatted_name": "Goat (未)"
     },
     "horse": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Health will tend to be good, with a few small problems only.",
+        "wealth": "At mid year, career and business will rise and start making profits. Try investing some money in low-risk stocks. This year is quite promising for investment, but don’t play with speculative projects.",
+        "romance": "Infidelity will destroy the harmony in married life! You must be careful in maintaining a relationship that has been built with the efforts.",
+        "lucky_numbers": [1, 3],
+        "lucky_directions": ["west", "southeast"],
+        "lucky_locations": ["Simpang", "Sengkang"],
+        "lucky_colors": ["cyan", "black"],
+        "formatted_name": "Horse (午)"
     },
     "monkey": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Mental health won’t be that great either. Watch out for depression and stress. Be open minded in facing life.",
+        "wealth": "Your finance will make a downtrend chart, so you have to set your expenditures on the way. If you are going to build a new business, read the provisions of the agreement as a whole.",
+        "romance": "Personally, in this year monkeys tend to be emotional. This will affect their love relationship. Be patient to save your marriage life, and you may often fight with your partner over little things.",
+        "lucky_numbers": [1, 7],
+        "lucky_directions": ["west", "northwest"],
+        "lucky_locations": ["Singapore River", "Yishun"],
+        "lucky_colors": ["white", "brown"],
+        "formatted_name": "Monkey (申)"
     },
-    "mouse": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+    "rat": {
+        "health": "Your health won’t be too good this year. Due to the pressure of work, you may often experience stress and indigestion",
+        "wealth": "The business will make a lot of profit in about half of the year. You can save your money, by limiting expenses and tight controls. You may need it later in the year at unexpected expenses. Avoid changing jobs, or moving to a new workplace. You need stability to maximize your profit this yea",
+        "romance": "Relationships with partners or family will also be fun and fine in 2022. Meanwhile for those who are single, you can look forward to new relationships. This is also the right time to get married, or have a baby (to be Tiger Zodiac).",
+        "lucky_numbers": [3, 9],
+        "lucky_directions": ["south", "northeast"],
+        "lucky_locations": ["Bedok", "Clementi"],
+        "lucky_colors": ["red", "orange"],
+        "formatted_name": "Rat (子)"
     },
     "ox": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "This year your health will be at its prime, but it is prone to accidents. Avoid challenging activities, such as hiking, diving, or taking long trips.",
+        "wealth": "The days of business life are full of drama of turmoil and chaos. You have to be patient, and let the confusion subside. Speculations do not have a place this year. Prepare savings for unexpected expenses, because the flow of money is still uncertain.",
+        "romance": "Those who are still single will likely find a promising relationship. Meanwhile married couples may face some “hiccups” in their household life. This is natural, since the Ox is known for its stubborn nature. Especially if your pair is a goat or a horse.",
+        "lucky_numbers": [6, 9],
+        "lucky_directions": ["east", "northwest"],
+        "lucky_locations": ["Boon Lay", "Hougang"],
+        "lucky_colors": ["yellow", "blue"],
+        "formatted_name": "Ox (丑)"
     },
     "pig": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "On the health side, minor illnesses such as flu and ulcers can come anytime. If you are careless, there is a potential for experiencing a big accident.",
+        "wealth": "They also predicted to face several obstacles and failures in business, which can lead to a great financial loss. Be ready for unexpected great expenses. Watch out for your co-worker who might be dangerous.",
+        "romance": "Your love relationship would also become complicated, and tends to heat up. The single also wouldn’t get a lot of opportunities in establishing a romantic relationship.",
+        "lucky_numbers": [7, 8],
+        "lucky_directions": ["west", "southwest"],
+        "lucky_locations": ["Pioneer", "Newton"],
+        "lucky_colors": ["magenta", "green"],
+        "formatted_name": "Pig (亥)"
     },
     "rabbit": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
+        "health": "It is also predicted that your health will not encounter any significant problems. Adopt diet and relaxation if necessary. Travel can be done at the end of the tiger years.",
+        "wealth": "Those who have the Rabbit Zodiac will walk the year 2022 brilliantly. Supported by the high luck factor, the career prospects and backbone business are predicted to experience a lot of increase. Even so, they may be having a difficult time at work, and will face some disagreements about work schedule. Avoid unnecessary expenses and speculative efforts. Investment decisions must be taken carefully.",
+        "romance": "Rabbits will also have fun times with their loving companions. For young families, this is a suitable time to have/add children.",
         "lucky_numbers": [8, 9],
         "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "lucky_locations": ["Paya Lebar", "Museum"],
+        "lucky_colors": ["black", "magenta"],
+        "formatted_name": "Rabbit (卯)"
     },
     "rooster": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Be careful of some health problems, such as interference joints and internal organ diseases like heart, high blood pressure, and diabetes.",
+        "wealth": "This year is also suitable to start a business/new units, or for those who want to change jobs. Your ambitions will be met if you are able to keep the opponent calm. On the other hand, your luck may still slightly fluctuate, because the cash flow would not be stabilized in the second half of this year. You can solve this problem with wisdom and flexibility.",
+        "romance": "For the singles, you have an opportunity to look for a couple. So, maximize it with your charm and flirt! For rooster  men, seduce them with flirty quotes 🙂",
+        "lucky_numbers": [3, 6],
+        "lucky_directions": ["east", "southwest"],
+        "lucky_locations": ["Sungei Kadut", "Woodlands"],
+        "lucky_colors": ["cyan", "white"],
+        "formatted_name": "Rooster (酉)"
     },
     "snake": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Your health would also not be so good. Be careful of severe insomnia and high blood pressure diseases. Reduce stress levels by doing meditation or yoga.",
+        "wealth": "Rather than lament the fate, you will get better by making yourself busy, with doing hobbies (such as culinary or gardening), who knows it can produce and become a kickstart of your business. Avoid to take risky decisions/actions to avoid a financial loss. Even if you are not being lucky this year, you have to remain focused on the job. Be diplomatic in dealing with co-worker/partners. Avoid quarrel, or it will make the situation worse!",
+        "romance": "In matters of romance, there is an opportunity for singles to establish romantic relationships, but it would not go far. For those who are already married, there will be a little turbulence.",
+        "lucky_numbers": [1, 9],
+        "lucky_directions": ["west", "northwest"],
+        "lucky_locations": ["Tanglin", "Bishan"],
+        "lucky_colors": ["red", "green"],
+        "formatted_name": "Snake (巳)"
     },
     "tiger": {
-        "health": "monkey health",
-        "wealth": "wealth",
-        "romance": "romance",
-        "lucky_numbers": [8, 9],
-        "lucky_directions": ["north", "northeast"],
-        "lucky_locations": ["Orchard", "Bishan"],
-        "lucky_colors": ["red", "blue"]
+        "health": "Health is also predicted not to improve, especially in problems associated with internal diseases, such as diabetes, stroke, and high blood pressure.",
+        "wealth": "The prospects for careers and businesses are predicted not to go anywhere this year. Your maximum luck is only in the first quarter, the rest are the victories of last year. So, use this year as time to learn, or develop new skills and abilities, so it can support your work later.",
+        "romance": "Relationships with partners also tend to heat up. Therefore it is important for you to control your anger and avoid unnecessary fights. Singles also need to be careful in committing to their partners.",
+        "lucky_numbers": [5, 7],
+        "lucky_directions": ["north", "southeast"],
+        "lucky_locations": ["Orchard", "Tampines"],
+        "lucky_colors": ["purple", "orange"],
+        "formatted_name": "Tiger (寅)"
     }
 }

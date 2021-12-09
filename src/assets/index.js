@@ -3,7 +3,7 @@ import dragonImage from './dragon.png';
 import goatImage from './goat.png';
 import horseImage from './horse.png';
 import monkeyImage from './monkey.png';
-import mouseImage from './mouse.png';
+import ratImage from './rat.png';
 import oxImage from './ox.png';
 import pigImage from './pig.png';
 import rabbitImage from './rabbit.png';
@@ -17,7 +17,7 @@ export {
     goatImage,
     horseImage,
     monkeyImage,
-    mouseImage,
+    ratImage,
     oxImage,
     pigImage,
     rabbitImage,

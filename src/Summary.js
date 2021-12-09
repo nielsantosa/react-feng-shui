@@ -9,7 +9,7 @@ import {
     goatImage,
     horseImage,
     monkeyImage,
-    mouseImage,
+    ratImage,
     oxImage,
     pigImage,
     rabbitImage,
@@ -29,19 +29,21 @@ const Summary = () => {
 
         return params
     }
+    
+    const convertLocation = (locations) => {
+        return locations.map(str=>'zo' + str.toLowerCase().split(" ").join("_"))
+    }
 
     const constructApiUrl = (locations) => {
         const apiUrl = 'https://www.99.co/api/v2/web/search/listings?';
         const queryParams = {
             'listing_type': 'sale',
             'property_segment': 'residential',
-            'page_size': 5,
+            'page_size': 10,
             'page_num': 1,
             'query_type': 'zone',
         }
-        queryParams['query_ids'] = locations.map((location) => {
-            return `zo${location.toLowerCase()}`
-        })
+        queryParams['query_ids'] = convertLocation(locations);
 
         return apiUrl + new URLSearchParams(queryParams).toString()
     }
@@ -51,13 +53,11 @@ const Summary = () => {
         const queryParams = {
             'listing_type': 'sale',
             'property_segment': 'residential',
-            'page_size': 5,
+            'page_size': 10,
             'page_num': 1,
             'query_type': 'zone',
         }
-        queryParams['query_ids'] = locations.map((location) => {
-            return `zo${location.toLowerCase()}`
-        })
+        queryParams['query_ids'] = convertLocation(locations);
 
         return apiUrl + new URLSearchParams(queryParams).toString()
     }
@@ -91,7 +91,7 @@ const Summary = () => {
         'goat': goatImage,
         'horse': horseImage,
         'monkey': monkeyImage,
-        'mouse': mouseImage,
+        'rat': ratImage,
         'ox': oxImage,
         'pig': pigImage,
         'rabbit': rabbitImage,
@@ -122,7 +122,7 @@ const Summary = () => {
                         <p>{oneZodiacData.health}</p>
                     </div>
                     <div className="summary-details-1-col">
-                        <h4>Weath</h4>
+                        <h4>Wealth</h4>
                         <p>{oneZodiacData.wealth}</p>
                     </div>
                     <div className="summary-details-1-col">
