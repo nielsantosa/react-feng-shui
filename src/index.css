@@ -107,8 +107,8 @@
 /* dragon */
 .home .main-img img:nth-child(2) {
     position: absolute;
-    top: calc(50% - 18em);
-    left: calc(50% + 2.8em);
+    top: calc(50% - 18rem);
+    left: calc(50% + 2.8rem);
     width: 32px;
 }
 /* pig */

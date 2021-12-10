@@ -34,7 +34,11 @@ const Summary = () => {
         return locations.map(str=>'zo' + str.toLowerCase().split(" ").join("_"))
     }
 
-    const constructApiUrl = (locations) => {
+    const formatWords = (array) => {
+        return array.map((str) => capitalize(str)).join(', ')
+    }
+
+    const constructApiUrlSale = (locations) => {
         const apiUrl = 'https://www.99.co/api/v2/web/search/listings?';
         const queryParams = {
             'listing_type': 'sale',
@@ -48,7 +52,7 @@ const Summary = () => {
         return apiUrl + new URLSearchParams(queryParams).toString()
     }
 
-    const constructSRPUrl = (locations) => {
+    const constructSRPUrlSale = (locations) => {
         const apiUrl = 'https://www.99.co/singapore/sale?';
         const queryParams = {
             'listing_type': 'sale',
@@ -102,8 +106,8 @@ const Summary = () => {
     const zodiacImage = zodiacImages[zodiac];
 
     /* handling listings */
-    const searchApiUrl = constructApiUrl(oneZodiacData.lucky_locations);
-    const { data, isPending, error } = useFetch(searchApiUrl);
+    const searchApiUrlSale = constructApiUrlSale(oneZodiacData.lucky_locations);
+    const { data, isPending, error } = useFetch(searchApiUrlSale);
     const listings = data && data.data.sections[0].listings;
 
     return (
@@ -136,13 +140,13 @@ const Summary = () => {
                         </div>
                         <div>
                             <h4>Lucky Colors</h4>
-                            <p>{oneZodiacData.lucky_colors.join(', ')}</p>
+                            <p>{formatWords(oneZodiacData.lucky_colors)}</p>
                         </div>
                     </div>
                     <div className="summary-details-2-cols">
                         <div>
                             <h4>Lucky Directions</h4>
-                            <p>{oneZodiacData.lucky_directions.join(', ')}</p>
+                            <p>{formatWords(oneZodiacData.lucky_directions)}</p>
                         </div>
                         <div>
                             <h4>Lucky Locations</h4>
@@ -157,7 +161,7 @@ const Summary = () => {
                             <b>Based on your lucky locations</b>
                         </div>
                         <div>
-                            <a href={constructSRPUrl(oneZodiacData.lucky_locations)} target="_blank" rel="noreferrer">
+                            <a href={constructSRPUrlSale(oneZodiacData.lucky_locations)} target="_blank" rel="noreferrer">
                                 View all
                             </a>
                         </div>
