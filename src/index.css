@@ -331,6 +331,7 @@
 /* loading-page */
 .loading-page {
     transition: opacity 3s ease-out;
+    position: relative;
 }
 .loading-page-grid {
     display: grid;
@@ -338,7 +339,7 @@
     column-gap: 10px;
     row-gap: 50px;
     position: absolute;
-    top: calc(50% - 16em);
+    top: calc(50% - 0em);
     left: calc(50% - 9em);
     
 }
