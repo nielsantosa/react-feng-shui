@@ -117,7 +117,7 @@ const Summary = () => {
                 <div className="summary-head">
                     <h1>Your Chinese Zodiac is</h1>
                     <img src={zodiacImage} alt={`${zodiac}_image`} />
-                    <h1>{capitalize(zodiac)}</h1>
+                    <h1>{/*capitalize(zodiac)*/oneZodiacData.formatted_name}</h1>
                     <p>{yearArray.slice(0, 2).join(', ')}, <b>{birthDateObject.getFullYear()}</b>, {yearArray.slice(3, 5).join(', ')}</p>
                 </div>
                 <div className="summary-details">
@@ -158,11 +158,11 @@ const Summary = () => {
                     <h2>Listings for Sale curated for people with {capitalize(zodiac)} Zodiac</h2>
                     <div className="summary-buttons">
                         <div>
-                            <b>Based on your lucky locations</b>
+                            <p><b>Based on your lucky locations</b></p>
                         </div>
                         <div>
                             <a href={constructSRPUrlSale(oneZodiacData.lucky_locations)} target="_blank" rel="noreferrer">
-                                View all
+                                <b>View all</b>
                             </a>
                         </div>
                     </div>

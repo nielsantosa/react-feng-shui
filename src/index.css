@@ -69,19 +69,19 @@
     animation-delay: 0s;
 }
 .home-loading-page span:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 0.1s;
 }
 .home-loading-page span:nth-child(3) {
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 .home-loading-page span:nth-child(4) {
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 .home-loading-page span:nth-child(5) {
-    animation-delay: 0.8s;
+    animation-delay: 0.4s;
 }
 .home-loading-page span:nth-child(6) {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 @keyframes fading {
     0% {
@@ -103,53 +103,54 @@
 }
 .home .main-img {
     padding: 12px 0px;
+    position: relative;
 }
 /* dragon */
 .home .main-img img:nth-child(2) {
     position: absolute;
-    top: calc(50% - 18rem);
+    top: calc(50% - 6rem);
     left: calc(50% + 2.8rem);
     width: 32px;
 }
 /* pig */
 .home .main-img img:nth-child(3) {
     position: absolute;
-    top: calc(50% - 15.4em);
+    top: calc(50% - 3.4em);
     left: calc(50% - 1.8em);
     width: 20px;
 }
 /* goat */
 .home .main-img img:nth-child(4) {
     position: absolute;
-    top: calc(50% - 6em);
+    top: calc(50% + 5em);
     left: calc(50% - 9em);
     width: 32px;
 }
 /* rooster */
 .home .main-img img:nth-child(5) {
     position: absolute;
-    top: calc(50% - 7.2em);
+    top: calc(50% + 5.5em);
     left: calc(50% + 5em);
     width: 40px;
 }
 /* rabbit */
 .home .main-img img:nth-child(6) {
     position: absolute;
-    top: calc(50% - 12em);
+    top: calc(50% + 0em);
     left: calc(50% + 0.3em);
     width: 15px;
 }
 /* tiger */
 .home .main-img img:nth-child(7) {
     position: absolute;
-    top: calc(50% - 8em);
+    top: calc(50% + 4em);
     left: calc(50% - 3em);
     width: 32px;
 }
 /* monkey */
 .home .main-img img:nth-child(8) {
     position: absolute;
-    top: calc(50% - 13.4em);
+    top: calc(50% - 1em);
     left: calc(50% - 8em);
     width: 22px;
 }
@@ -258,6 +259,10 @@
     margin: 10px 0px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
+}
+.listing-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 0px 8px 20px 0px #0B113426;
 }
 .listing-card img {
     height: 156px;
@@ -378,7 +383,7 @@
 .loading-page-child-1 img{
     width: 80px;
     opacity: 0;
-    animation: flicker-reverse 4.25s infinite linear;
+    animation: flicker-reverse 2.5s infinite linear;
 }
 .loading-page-child-2 img{
     width: 80px;
@@ -393,7 +398,7 @@
 .loading-page-child-4 img{
     width: 80px;
     opacity: 0;
-    animation: flicker-reverse 6.75s infinite linear;
+    animation: flicker-reverse 1.5s infinite linear;
 }
 @keyframes load8 {
     0% {

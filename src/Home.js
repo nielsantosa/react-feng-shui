@@ -34,7 +34,7 @@ const Home = () => {
             const homepage = document.querySelector('.homepage');
             homepage.classList.remove('loader--hide');
             loader.classList.add('loader--hide');
-        }, 2000)
+        }, 1500)
         setIsLoading(false);
     }
 
